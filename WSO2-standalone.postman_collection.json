@@ -1,0 +1,1143 @@
+{
+	"info": {
+		"_postman_id": "fa47c5d1-5c3c-4454-8b9e-4ccdd2cfaddf",
+		"name": "WSO2-standalone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sas-reports",
+			"item": [
+				{
+					"name": "account-metrics",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/{{sas-rest}}/account-metrics?format=csv",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{sas-rest}}",
+								"account-metrics"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "csv"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inactive-account-metrics",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/{{sas-rest}}/inactive-account-metrics?format=csv",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{sas-rest}}",
+								"inactive-account-metrics"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "csv"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "open-positions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/{{sas-rest}}/open-positions?format=csv",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{sas-rest}}",
+								"open-positions"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "csv"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "open-orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/{{sas-rest}}/open-orders?format=csv",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{sas-rest}}",
+								"open-orders"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "csv"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "activities/transfers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/{{sas-rest}}/activities/transfers?startTime=1589205005000&endTime=1589291405000&format=csv",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{sas-rest}}",
+								"activities",
+								"transfers"
+							],
+							"query": [
+								{
+									"key": "startTime",
+									"value": "1589205005000"
+								},
+								{
+									"key": "endTime",
+									"value": "1589291405000"
+								},
+								{
+									"key": "format",
+									"value": "csv"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "activities/closed-transactions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/{{sas-rest}}/activities/closed-transactions?startTime=1589205005000&endTime=1589291405000&format=csv",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{sas-rest}}",
+								"activities",
+								"closed-transactions"
+							],
+							"query": [
+								{
+									"key": "startTime",
+									"value": "1589205005000"
+								},
+								{
+									"key": "endTime",
+									"value": "1589291405000"
+								},
+								{
+									"key": "format",
+									"value": "csv"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "activities/completed-orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/{{sas-rest}}/activities/completed-orders?startTime=1589205005000&endTime=1589291405000&status=CANCELED&status=COMPLETED&status=EXPIRED&status=REJECTED&status=REPLACED&sleep=10&format=csv",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{sas-rest}}",
+								"activities",
+								"completed-orders"
+							],
+							"query": [
+								{
+									"key": "startTime",
+									"value": "1589205005000"
+								},
+								{
+									"key": "endTime",
+									"value": "1589291405000"
+								},
+								{
+									"key": "status",
+									"value": "CANCELED"
+								},
+								{
+									"key": "status",
+									"value": "COMPLETED"
+								},
+								{
+									"key": "status",
+									"value": "EXPIRED"
+								},
+								{
+									"key": "status",
+									"value": "REJECTED"
+								},
+								{
+									"key": "status",
+									"value": "REPLACED"
+								},
+								{
+									"key": "sleep",
+									"value": "10"
+								},
+								{
+									"key": "format",
+									"value": "csv"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "instruments",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/{{sas-rest}}/instruments?format=csv",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{sas-rest}}",
+								"instruments"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "csv"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user-records",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/{{sas-rest}}/user-records?format=csv",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{sas-rest}}",
+								"user-records"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "csv"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "candles",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/{{sas-rest}}/candles?startTime=1589205005000&endTime=1589291405000&format=csv",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{sas-rest}}",
+								"candles"
+							],
+							"query": [
+								{
+									"key": "startTime",
+									"value": "1589205005000"
+								},
+								{
+									"key": "endTime",
+									"value": "1589291405000"
+								},
+								{
+									"key": "format",
+									"value": "csv"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "d42bda21-abb7-4839-9d06-bd08c66e8f2a",
+						"type": "text/javascript",
+						"exec": [
+							"const echoPostRequest = {",
+							"  url: pm.environment.get('domain')+'/token?grant_type=password&username='+pm.environment.get('token_login')+'&password='+pm.environment.get('token_password'),",
+							"  method: 'POST',",
+							"  header: {",
+							"        'Authorization': 'Basic '+pm.environment.get('token_basic_auth')",
+							"  }",
+							"};",
+							"",
+							"console.log(echoPostRequest);",
+							"var getToken = true;",
+							"",
+							"if (!pm.environment.get('accessTokenExpiry') || ",
+							"    !pm.environment.get('token')) {",
+							"    console.log('Token or expiry date are missing')",
+							"} else if (pm.environment.get('accessTokenExpiry') <= (new Date()).getTime()) {",
+							"    console.log('Token is expired')",
+							"} else {",
+							"    getToken = false;",
+							"    console.log('Token and expiry date are all good');",
+							"}",
+							"",
+							"if (getToken === true) {",
+							"    pm.sendRequest(echoPostRequest, function (err, res) {",
+							"    console.log(err ? err : res.json());",
+							"        if (err === null) {",
+							"            console.log('Saving the token and expiry date')",
+							"            var responseJson = res.json();",
+							"            pm.environment.set('token', responseJson.access_token)",
+							"    ",
+							"            var expiryDate = new Date();",
+							"            expiryDate.setSeconds(expiryDate.getSeconds() + responseJson.expires_in);",
+							"            pm.environment.set('accessTokenExpiry', expiryDate.getTime());",
+							"        }",
+							"    });",
+							"}"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c16bd57-7605-445a-88b6-c2df7fae1cf7",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "dxweb",
+			"item": [
+				{
+					"name": "createCustomer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "nastya2211@test.ua",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "currencyCode",
+									"value": "USD",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "REAL",
+									"type": "text"
+								},
+								{
+									"key": "brandPrefix",
+									"value": "mk",
+									"type": "text"
+								},
+								{
+									"key": "activeStatus",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "testCompanyPlzIgnore",
+									"type": "text"
+								},
+								{
+									"key": "fullName",
+									"value": "nastya",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "isIslamic",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "isPaperMoney",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "isOmnibus",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "ua",
+									"type": "text"
+								},
+								{
+									"key": "externalId",
+									"value": "a",
+									"type": "text"
+								}
+							],
+							"options": {}
+						},
+						"url": {
+							"raw": "{{domain}}/{{dxweb-rest}}/customers",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{dxweb-rest}}",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changeAccountBalance",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "amount",
+									"value": "10000",
+									"type": "text"
+								},
+								{
+									"key": "transferType",
+									"value": "DEPOSIT",
+									"type": "text"
+								},
+								{
+									"key": "transferCode",
+									"value": "AAABZzsI9ywwwRbkK_Lsss3",
+									"type": "text"
+								},
+								{
+									"key": "comment",
+									"value": "Comments",
+									"type": "text"
+								},
+								{
+									"key": "requestSource",
+									"value": "CRM",
+									"type": "text"
+								},
+								{
+									"key": "real",
+									"value": "true",
+									"type": "text"
+								}
+							],
+							"options": {}
+						},
+						"url": {
+							"raw": "{{domain}}/{{dxweb-rest}}/customers/mk10016446/transfers",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{dxweb-rest}}",
+								"customers",
+								"mk10016446",
+								"transfers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAccount",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "newFullName",
+									"value": "Nastya",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "newPassword",
+									"value": "aA1234!",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "fr",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "newCurrencyCode",
+									"value": "EUR",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "activeStatus",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "expirationDate",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "isIslamic",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "isPaperMoney",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "isEnforceDeactivation",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "attributes",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "company",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "brand",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": "BOTH",
+									"type": "text"
+								}
+							],
+							"options": {}
+						},
+						"url": {
+							"raw": "{{domain}}/{{dxweb-rest}}/customers/mk10016360",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{dxweb-rest}}",
+								"customers",
+								"mk10016360"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "activateProfiles",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "allProfilesSet",
+									"value": "9276996:3",
+									"description": "This profiles will be removed",
+									"type": "text"
+								},
+								{
+									"key": "activateProfilesSet",
+									"value": "",
+									"description": "This profiles will be activated",
+									"type": "text"
+								}
+							],
+							"options": {}
+						},
+						"url": {
+							"raw": "{{domain}}/{{dxweb-rest}}/customers/{{account}}/activateProfiles",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{dxweb-rest}}",
+								"customers",
+								"{{account}}",
+								"activateProfiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "exchangeProfiles",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "profileAdd",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "profileRemove",
+									"value": "",
+									"type": "text"
+								}
+							],
+							"options": {}
+						},
+						"url": {
+							"raw": "{{domain}}/{{dxweb-rest}}/customers/{{account}}/exchangeProfiles",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{dxweb-rest}}",
+								"customers",
+								"{{account}}",
+								"exchangeProfiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validate/withdrawal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/{{dxweb-rest}}/accounts/{{account}}/validate/withdrawal?amount=238.9&requestSource=CRM",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{dxweb-rest}}",
+								"accounts",
+								"{{account}}",
+								"validate",
+								"withdrawal"
+							],
+							"query": [
+								{
+									"key": "amount",
+									"value": "238.9"
+								},
+								{
+									"key": "requestSource",
+									"value": "CRM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "generateToken",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/{{dxweb-rest}}/generateToken?login=root&domain=system",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{dxweb-rest}}",
+								"generateToken"
+							],
+							"query": [
+								{
+									"key": "login",
+									"value": "root"
+								},
+								{
+									"key": "domain",
+									"value": "system"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/validate/adjustment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/{{dxweb-rest}}/accounts/{{account}}/metrics",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{dxweb-rest}}",
+								"accounts",
+								"{{account}}",
+								"metrics"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "d2e18006-882a-4b1f-a90b-efbd7c7ac5cd",
+						"type": "text/javascript",
+						"exec": [
+							"const echoPostRequest = {",
+							"  url: pm.environment.get('domain')+'/token?grant_type=password&username='+pm.environment.get('token_login')+'&password='+pm.environment.get('token_password'),",
+							"  method: 'POST',",
+							"  header: {",
+							"        'Authorization': 'Basic '+pm.environment.get('token_basic_auth')",
+							"  }",
+							"};",
+							"",
+							"console.log(echoPostRequest);",
+							"var getToken = true;",
+							"",
+							"if (!pm.environment.get('accessTokenExpiry') || ",
+							"    !pm.environment.get('token')) {",
+							"    console.log('Token or expiry date are missing')",
+							"    getToken = true;",
+							"} else if (pm.environment.get('accessTokenExpiry') <= (new Date()).getTime()) {",
+							"    console.log('Token is expired')",
+							"    getToken = true;",
+							"} else {",
+							"    getToken = false;",
+							"    console.log('Token and expiry date are all good');",
+							"}",
+							"",
+							"if (getToken === true) {",
+							"    pm.sendRequest(echoPostRequest, function (err, res) {",
+							"    console.log(err ? err : res.json());",
+							"        if (err === null) {",
+							"            console.log('Saving the token and expiry date')",
+							"            var responseJson = res.json();",
+							"            pm.environment.set('token', responseJson.access_token)",
+							"    ",
+							"            var expiryDate = new Date();",
+							"            expiryDate.setSeconds(expiryDate.getSeconds() + responseJson.expires_in);",
+							"            pm.environment.set('accessTokenExpiry', expiryDate.getTime());",
+							"        }",
+							"    });",
+							"}"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "9e824f51-0839-4a01-9607-c6273e3b5d6b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "wso2token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "FHL_hmuh92BD7RbgVSzkOVwbULga",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "y1f44w01zPOEcIAZLZiwcksoQNUa",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/token?grant_type=password&username=qa_test&password=qa_test",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "password"
+						},
+						{
+							"key": "username",
+							"value": "qa_test"
+						},
+						{
+							"key": "password",
+							"value": "qa_test"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "528bc43b-aa06-4ea2-ba73-0b28af9def1b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f290cb93-9175-44fa-b9ba-a2dcb11b1151",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
