@@ -1103,60 +1103,6 @@
         },
         "deprecated": false
       }
-    },
-    "/token": {
-      "post": {
-        "tags": [
-          "Misc"
-        ],
-        "summary": "wso2token",
-        "operationId": "wso2token",
-        "parameters": [
-          {
-            "name": "grant_type",
-            "in": "query",
-            "description": "",
-            "required": true,
-            "style": "form",
-            "explode": true,
-            "schema": {
-              "type": "string",
-              "example": "password"
-            }
-          },
-          {
-            "name": "username",
-            "in": "query",
-            "description": "",
-            "required": true,
-            "style": "form",
-            "explode": true,
-            "schema": {
-              "type": "string",
-              "example": "qa_test"
-            }
-          },
-          {
-            "name": "password",
-            "in": "query",
-            "description": "",
-            "required": true,
-            "style": "form",
-            "explode": true,
-            "schema": {
-              "type": "string",
-              "example": "qa_test"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "headers": {}
-          }
-        },
-        "deprecated": false
-      }
     }
   },
   "components": {
@@ -1178,10 +1124,6 @@
     },
     {
       "name": "dxweb"
-    },
-    {
-      "name": "Misc",
-      "description": ""
     }
   ]
 }
