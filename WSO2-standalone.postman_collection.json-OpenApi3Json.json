@@ -1,0 +1,1187 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "WSO2-standalone",
+    "contact": {},
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://example.com",
+      "variables": {}
+    }
+  ],
+  "paths": {
+    "/{sas-rest}/account-metrics": {
+      "get": {
+        "tags": [
+          "sas-reports"
+        ],
+        "summary": "account-metrics",
+        "operationId": "account-metrics",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "csv"
+            }
+          },
+          {
+            "name": "sas-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{sas-rest}/inactive-account-metrics": {
+      "get": {
+        "tags": [
+          "sas-reports"
+        ],
+        "summary": "inactive-account-metrics",
+        "operationId": "inactive-account-metrics",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "csv"
+            }
+          },
+          {
+            "name": "sas-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{sas-rest}/open-positions": {
+      "get": {
+        "tags": [
+          "sas-reports"
+        ],
+        "summary": "open-positions",
+        "operationId": "open-positions",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "csv"
+            }
+          },
+          {
+            "name": "sas-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{sas-rest}/open-orders": {
+      "get": {
+        "tags": [
+          "sas-reports"
+        ],
+        "summary": "open-orders",
+        "operationId": "open-orders",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "csv"
+            }
+          },
+          {
+            "name": "sas-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{sas-rest}/activities/transfers": {
+      "get": {
+        "tags": [
+          "sas-reports"
+        ],
+        "summary": "activities/transfers",
+        "operationId": "activities/transfers",
+        "parameters": [
+          {
+            "name": "startTime",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "example": 1589205005000
+            }
+          },
+          {
+            "name": "endTime",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "example": 1589291405000
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "csv"
+            }
+          },
+          {
+            "name": "sas-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{sas-rest}/activities/closed-transactions": {
+      "get": {
+        "tags": [
+          "sas-reports"
+        ],
+        "summary": "activities/closed-transactions",
+        "operationId": "activities/closed-transactions",
+        "parameters": [
+          {
+            "name": "startTime",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "example": 1589205005000
+            }
+          },
+          {
+            "name": "endTime",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "example": 1589291405000
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "csv"
+            }
+          },
+          {
+            "name": "sas-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{sas-rest}/activities/completed-orders": {
+      "get": {
+        "tags": [
+          "sas-reports"
+        ],
+        "summary": "activities/completed-orders",
+        "operationId": "activities/completed-orders",
+        "parameters": [
+          {
+            "name": "startTime",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "example": 1589205005000
+            }
+          },
+          {
+            "name": "endTime",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "example": 1589291405000
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "CANCELED"
+            }
+          },
+          {
+            "name": "sleep",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "example": 10
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "csv"
+            }
+          },
+          {
+            "name": "sas-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{sas-rest}/instruments": {
+      "get": {
+        "tags": [
+          "sas-reports"
+        ],
+        "summary": "instruments",
+        "operationId": "instruments",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "csv"
+            }
+          },
+          {
+            "name": "sas-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{sas-rest}/user-records": {
+      "get": {
+        "tags": [
+          "sas-reports"
+        ],
+        "summary": "user-records",
+        "operationId": "user-records",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "csv"
+            }
+          },
+          {
+            "name": "sas-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{sas-rest}/candles": {
+      "get": {
+        "tags": [
+          "sas-reports"
+        ],
+        "summary": "candles",
+        "operationId": "candles",
+        "parameters": [
+          {
+            "name": "startTime",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "example": 1589205005000
+            }
+          },
+          {
+            "name": "endTime",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "example": 1589291405000
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "csv"
+            }
+          },
+          {
+            "name": "sas-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{dxweb-rest}/customers": {
+      "post": {
+        "tags": [
+          "dxweb"
+        ],
+        "summary": "createCustomer",
+        "operationId": "createCustomer",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "application/x-www-form-urlencoded"
+            }
+          },
+          {
+            "name": "dxweb-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "password",
+                  "currencyCode",
+                  "type",
+                  "brandPrefix",
+                  "activeStatus",
+                  "company",
+                  "isIslamic",
+                  "isPaperMoney",
+                  "isOmnibus",
+                  "country",
+                  "externalId"
+                ],
+                "type": "object",
+                "properties": {
+                  "password": {
+                    "type": "integer",
+                    "format": "int32",
+                    "example": 1234
+                  },
+                  "currencyCode": {
+                    "type": "string",
+                    "example": "USD"
+                  },
+                  "type": {
+                    "type": "string",
+                    "example": "REAL"
+                  },
+                  "brandPrefix": {
+                    "type": "string",
+                    "example": "mk"
+                  },
+                  "activeStatus": {
+                    "type": "integer",
+                    "format": "int32",
+                    "example": 1
+                  },
+                  "company": {
+                    "type": "string",
+                    "example": "testCompanyPlzIgnore"
+                  },
+                  "isIslamic": {
+                    "type": "integer",
+                    "format": "int32",
+                    "example": 0
+                  },
+                  "isPaperMoney": {
+                    "type": "integer",
+                    "format": "int32",
+                    "example": 0
+                  },
+                  "isOmnibus": {
+                    "type": "integer",
+                    "format": "int32",
+                    "example": 0
+                  },
+                  "country": {
+                    "type": "string",
+                    "example": "ua"
+                  },
+                  "externalId": {
+                    "type": "string",
+                    "example": "a"
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{dxweb-rest}/customers/mk10016446/transfers": {
+      "post": {
+        "tags": [
+          "dxweb"
+        ],
+        "summary": "changeAccountBalance",
+        "operationId": "changeAccountBalance",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "application/x-www-form-urlencoded"
+            }
+          },
+          {
+            "name": "dxweb-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "amount",
+                  "transferType",
+                  "transferCode",
+                  "comment",
+                  "requestSource",
+                  "real"
+                ],
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "integer",
+                    "format": "int32",
+                    "example": 10000
+                  },
+                  "transferType": {
+                    "type": "string",
+                    "example": "DEPOSIT"
+                  },
+                  "transferCode": {
+                    "type": "string",
+                    "example": "AAABZzsI9ywwwRbkK_Lsss3"
+                  },
+                  "comment": {
+                    "type": "string",
+                    "example": "Comments"
+                  },
+                  "requestSource": {
+                    "type": "string",
+                    "example": "CRM"
+                  },
+                  "real": {
+                    "type": "boolean",
+                    "example": true
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{dxweb-rest}/customers/mk10016360": {
+      "put": {
+        "tags": [
+          "dxweb"
+        ],
+        "summary": "updateAccount",
+        "operationId": "updateAccount",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "application/x-www-form-urlencoded"
+            }
+          },
+          {
+            "name": "dxweb-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "newPassword",
+                  "type"
+                ],
+                "type": "object",
+                "properties": {
+                  "newPassword": {
+                    "type": "string",
+                    "example": "aA1234!"
+                  },
+                  "type": {
+                    "type": "string",
+                    "example": "BOTH"
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{dxweb-rest}/customers/{account}/activateProfiles": {
+      "put": {
+        "tags": [
+          "dxweb"
+        ],
+        "summary": "activateProfiles",
+        "operationId": "activateProfiles",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "application/x-www-form-urlencoded"
+            }
+          },
+          {
+            "name": "dxweb-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "account",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "allProfilesSet",
+                  "activateProfilesSet"
+                ],
+                "type": "object",
+                "properties": {
+                  "allProfilesSet": {
+                    "type": "string",
+                    "description": "This profiles will be removed",
+                    "example": "9276996:3"
+                  },
+                  "activateProfilesSet": {
+                    "type": "string",
+                    "description": "This profiles will be activated"
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{dxweb-rest}/customers/{account}/exchangeProfiles": {
+      "put": {
+        "tags": [
+          "dxweb"
+        ],
+        "summary": "exchangeProfiles",
+        "operationId": "exchangeProfiles",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "application/x-www-form-urlencoded"
+            }
+          },
+          {
+            "name": "dxweb-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "account",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "profileAdd",
+                  "profileRemove"
+                ],
+                "type": "object",
+                "properties": {
+                  "profileAdd": {
+                    "type": "string"
+                  },
+                  "profileRemove": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{dxweb-rest}/accounts/{account}/validate/withdrawal": {
+      "get": {
+        "tags": [
+          "dxweb"
+        ],
+        "summary": "validate/withdrawal",
+        "operationId": "validate/withdrawal",
+        "parameters": [
+          {
+            "name": "amount",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "number",
+              "format": "double",
+              "example": 238.9
+            }
+          },
+          {
+            "name": "requestSource",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "CRM"
+            }
+          },
+          {
+            "name": "dxweb-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "account",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{dxweb-rest}/generateToken": {
+      "get": {
+        "tags": [
+          "dxweb"
+        ],
+        "summary": "generateToken",
+        "operationId": "generateToken",
+        "parameters": [
+          {
+            "name": "login",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "root"
+            }
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "system"
+            }
+          },
+          {
+            "name": "dxweb-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/{dxweb-rest}/accounts/{account}/metrics": {
+      "get": {
+        "tags": [
+          "dxweb"
+        ],
+        "summary": "/validate/adjustment",
+        "operationId": "/validate/adjustment",
+        "parameters": [
+          {
+            "name": "dxweb-rest",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "account",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/token": {
+      "post": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "wso2token",
+        "operationId": "wso2token",
+        "parameters": [
+          {
+            "name": "grant_type",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "password"
+            }
+          },
+          {
+            "name": "username",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "qa_test"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "example": "qa_test"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "httpBearer": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "security": [
+    {
+      "httpBearer": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "sas-reports"
+    },
+    {
+      "name": "dxweb"
+    },
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}
